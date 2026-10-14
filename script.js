@@ -1,21 +1,16 @@
-function afficheMessage() {
-    alert("Bienvenue sur ma page ma page web personnell ! je suis information.")
-
-}
-
 const themeBtn = document.getElementById("themeBtn");
 
-themeBtn.addEventListener("click", function () {
+if (themeBtn) {
+    themeBtn.addEventListener("click", function () {
+        const isDarkMode = document.body.classList.toggle("dark-mode");
+        const themeLabel = themeBtn.querySelector(".theme-label");
 
-    document.body.classList.toggle("dark-mode");
-
-    if
-        (document.body.classList.contains("dark-mode")) {
-        themeBtn.textContent = "mode clair";
-    } else {
-        themeBtn.textContent = "mode sombre";
-    }
-})
+        themeBtn.setAttribute("aria-pressed", String(isDarkMode));
+        if (themeLabel) {
+            themeLabel.textContent = isDarkMode ? "Mode clair" : "Mode sombre";
+        }
+    });
+}
 
 const contactForm = document.getElementById("contactForm");
 const formStatus = document.getElementById("formStatus");
