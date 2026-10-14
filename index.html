@@ -1,0 +1,113 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon site web personnelle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+<h1 id="accueil">Bienvenue sur ma page web personnel</h1>
+
+
+<h2>je suis informaticien</h2>
+<img src="ma-photo.jpg.jpg" alt="Ma photo personnelle" width="250">
+
+<p>Bienvenue sur ma page web personnelle.</p>
+
+<section id="apropos">
+    <h2>A propos de moi </h2>
+    <p>
+        je suis informatien passionné par la nouvelles technologies.
+        je développe mes compétences en Html, CSS et javascript. mon objectif est créer des sites web modernes et pratiques.
+    </p>
+</section>
+
+<section id="competences">
+    <h2>Mes compétences</h2>
+    <ul>
+        <li>
+            HTML : structure des pages web
+        </li>
+        <li>
+            CSS : dessign et mise en forme
+        </li>
+        <li>
+            JavaScript : interactivité
+        </li>
+        <li>
+            Microsoft World et outils bureatiques
+        </li>
+    </ul>
+
+</section>
+
+<section id="projet">
+    <h2>Mes projets</h2>
+
+    <div class="projet">
+        <h3>Mon site  personnel</h3>
+        <p>
+            Création d'un site web avec HTML, CSS et Javascript.
+        </p>
+
+    </div>
+
+    <div class="projet">
+        <h3>Mes futurs projets</h3>
+        <p>
+            Je continue à apprendre et à developper mes competences en informatique.
+        </p>
+    </div>
+
+</section>
+
+<section id="Contact">
+    <h2>Me Contact</h2>
+
+    <p>
+        Vous souhaitez travailler avec moi ou discuter d'un projet
+    </p>
+
+    <form id="contactForm" class="contact-form">
+        <div class="form-field">
+            <label for="contactName">Ton nom</label>
+            <input id="contactName" name="name" type="text" autocomplete="name" placeholder="Ex. Calvin Faka" required>
+        </div>
+
+        <div class="form-field">
+            <label for="contactEmail">Ton adresse e-mail</label>
+            <input id="contactEmail" name="email" type="email" autocomplete="email" placeholder="nom@exemple.com" required>
+        </div>
+
+        <div class="form-field">
+            <label for="contactMessage">Ton message</label>
+            <textarea id="contactMessage" name="message" rows="5" placeholder="Explique-moi comment je peux t'aider..." required></textarea>
+        </div>
+
+        <button type="submit">Préparer le message</button>
+    </form>
+    <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+
+</section>
+
+<button onclick="afficheMessage()">Medécouvrir</button>
+
+<nav class="menu">
+    <a href="#accueil">Accueil</a>
+    <a href="#apropos">A propos</a>
+    <a href="#competences">Compétences</a>
+    <a href="#projet">projets</a>
+    <a href="#Contact">Contact</a>
+
+</nav>
+
+<button id="themeBtn">Mode sombre</button>
+<!--Le reste de ton site continue-->
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
